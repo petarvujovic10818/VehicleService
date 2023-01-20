@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Getter
@@ -20,10 +21,6 @@ public class Vehicle {
     private String model;
 
     private int price;
-
-    private String fromDate;
-
-    private String toDate;
 
     @ManyToOne(optional = false)
     private Company company;
